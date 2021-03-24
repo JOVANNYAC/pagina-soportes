@@ -1,0 +1,623 @@
+* {
+    padding: 5px;
+    margin: 0px;
+}
+
+.redes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(66, 66, 66);
+
+}
+
+.facebook {
+    border-radius: 7px;
+    width: 40px;
+   margin-left: 85%;
+
+}
+
+.whatsapp {
+    border-radius: 7px;
+    width: 40px;
+    margin-right: 85%;
+   
+   
+    
+}
+
+.whatsapp-flotante {
+    width: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 15px;
+    z-index: 100;
+
+}
+
+html {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.boton-seleccionar-productos a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.boton-seleccionar-productos  {
+    background-color: yellow;
+    border-radius: 15px;
+}
+
+
+.siguente {
+    background-color: yellow;
+    border-radius: 15px;
+}
+
+.siguente a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.volver-inicio {
+    background-color: yellow;
+    border-radius: 15px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.volver-inicio a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    bottom: 10px;    
+}
+
+#contenedor-volver-inicio {
+    display: flex;
+    align-items: center;
+
+}
+/* esta seccion abajo es el header no he sido capas de colocar la imagen de fondo*/
+
+
+.contenedor {
+display: grid;
+grid-template-columns: 1fr 1fr;
+background-color: grey;
+}
+
+
+
+
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(235, 231, 16);
+    background: rgb(31, 29, 29);
+    font-size: 15px;
+    border-radius: 5px;
+      
+}
+
+.menu ul li {
+    display: inline-block; 
+    padding-top: 5px;
+}
+
+
+#logo {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 250px;
+    text-align: left;
+}
+
+/* la seccion que esta arria es el header */
+
+
+.menu-filtro {
+    background-color: black;
+}
+
+
+.h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.p1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+#tipo-de-pantalla img {
+    width: 100px;
+    height: auto; 
+    border: 2px solid black;  
+}
+
+#tipo-de-pantalla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px; 
+   
+}
+
+
+
+
+ #tipo-de-pantalla img:hover {
+     margin-top: 20px;
+    transform: scale(1.5);
+    border: 3px solid yellow;
+    cursor: pointer;
+   
+ }
+
+
+ /* esta seccion de arriba es donde estan las 5 imagenes para seleccionar
+  los soportes segun el tamaño de la pantalla */
+ 
+ #modelos {
+     text-align: center;
+     background-color: grey;
+ }
+
+
+/* aqui abajo comienza la configuracion del slider del primer modelo 
+de soporte de brazzo para monitor hasta 30 pulgadas
+ */
+
+.brazo-monitor img {
+    width: 300px;
+    height: auto;
+}
+
+.brazo-monitor {
+    margin-bottom: 20px;
+    margin-top: 20px;
+   background-color: cornflowerblue;
+   width: 400px;
+  padding: 30px;
+}
+
+.brazo-monitor ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+ul.slider {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: cornflowerblue ;
+    transition: opacity .5s;
+
+
+}
+.menu-slider {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-slider li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider li:first-child{ 
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+
+
+.menu-slider li a {
+    display: inline-block;
+    color: yellow;
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+
+
+}
+ /* esta seccion de arriba esta toda la configuracion del slider del primer tamaño de pantalla */
+
+
+
+ /* aqui comienza el segundo slider */
+
+.a30-40 img {
+    width: 400px;
+    height: auto;
+}
+
+
+.a30-40 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    width: 400px;
+    padding: 30px;
+ }
+
+ 
+.a30-40 ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+ul.slider40 {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+ul.slider40 li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: cornflowerblue ;
+    transition: opacity .5s;
+
+
+}
+.menu-slider40 {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-slider40 li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+ul.slider40 li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider40 li:first-child{ 
+    opacity: 1;
+}
+
+ul.slider40 li:target {
+    opacity: 1;
+}
+
+
+
+.menu-slider40 li a {
+    display: inline-block;
+    color:yellow;
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+
+/* aqui termina el segundo slider */
+
+
+/* aqui comienza el tercer slider */
+
+
+.a40-50 img {
+    width: 400px;
+    height: auto;
+}
+
+
+.a40-50 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    width: 400px;
+   padding: 30px;
+ }
+
+ 
+.a40-50 ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+ul.slider50 {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+ul.slider50 li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: cornflowerblue ;
+    transition: opacity .5s;
+
+
+}
+.menu-slider50 {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-slider50 li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+ul.slider50 li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider50 li:first-child{ 
+    opacity: 1;
+}
+
+ul.slider50 li:target {
+    opacity: 1;
+}
+
+
+
+.menu-slider50 li a {
+    display: inline-block;
+    color:yellow;
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+/* aca termina el tercer slider para pantalla de 50 */
+
+
+
+
+/* aca comienza el cuarto slider para pantallas de 60 */
+
+
+
+.a50-60 img {
+    width: 400px;
+    height: auto;
+}
+
+
+.a50-60 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    width: 400px;
+   padding: 30px;
+ }
+
+ 
+.a50-60 ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+ul.slider60 {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+ul.slider60 li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: cornflowerblue ;
+    transition: opacity .5s;
+
+
+}
+.menu-slider60 {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-slider60 li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+ul.slider60 li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slider60 li:first-child{ 
+    opacity: 1;
+}
+
+ul.slider60 li:target {
+    opacity: 1;
+}
+
+
+
+.menu-slider60 li a {
+    display: inline-block;
+    color:yellow;
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+/* aca termina el cuarto slider para pantallas de 60  */
+
+
+/* aca comienza el quinto slider para pantallas de mas de 60 */
+
+
+.mas60 img {
+    width: 400px;
+    height: auto;
+}
+
+
+.mas60 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: cornflowerblue;
+    width: 400px;
+   padding: 30px;
+ }
+
+ 
+.mas60 ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+ul.slidermas60 {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+ul.slidermas60 li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: cornflowerblue ;
+    transition: opacity .5s;
+
+
+}
+.menu-slidermas60 {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-slidermas60 li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+ul.slidermas60 li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ul.slidermas60 li:first-child{ 
+    opacity: 1;
+}
+
+ul.slidermas60 li:target {
+    opacity: 1;
+}
+
+
+
+.menu-slidermas60 li a {
+    display: inline-block;
+    color:yellow;
+    text-decoration: none;
+    background-color: gray;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+
+.footer {
+    background-color: grey;
+}
+
+.contenido {
+    background-color: rgb(88, 88, 97);
+}
